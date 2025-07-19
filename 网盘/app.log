@@ -1,0 +1,290 @@
+2025-07-08 13:18:25,236 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-08 13:19:37,318 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-08 13:19:37,319 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-08 13:19:37,327 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$yA1IUbmX9NS73HTA$0c145232730130af965b7d4ad206a04723ac43b30db8cf03b94ec09e077fdf3204e298c21d7743941d1124d63a6b9757864992fa04606f3fd7a2e5143e583df6
+2025-07-08 13:19:37,327 - app - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/DIS125G/网页制作/网盘/app.py", line 239, in login
+    generated_hash = generate_password_hash(password, method='scrypt', n=32768, r=8, p=1)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: generate_password_hash() got an unexpected keyword argument 'n'
+2025-07-08 13:20:11,891 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-08 13:20:11,892 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-08 13:20:11,894 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$yA1IUbmX9NS73HTA$0c145232730130af965b7d4ad206a04723ac43b30db8cf03b94ec09e077fdf3204e298c21d7743941d1124d63a6b9757864992fa04606f3fd7a2e5143e583df6
+2025-07-08 13:20:11,894 - app - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/DIS125G/网页制作/网盘/app.py", line 239, in login
+    generated_hash = generate_password_hash(password, method='scrypt', n=32768, r=8, p=1)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: generate_password_hash() got an unexpected keyword argument 'n'
+2025-07-08 13:20:43,833 - app - INFO - 尝试加载用户数据文件: /Volumes/DIS125G/网页制作/网盘/users.json
+2025-07-08 13:20:43,836 - app - INFO - 成功加载用户数据，共 1 个用户
+2025-07-08 13:20:52,811 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-08 13:20:52,813 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-08 13:20:52,814 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$yA1IUbmX9NS73HTA$0c145232730130af965b7d4ad206a04723ac43b30db8cf03b94ec09e077fdf3204e298c21d7743941d1124d63a6b9757864992fa04606f3fd7a2e5143e583df6
+2025-07-08 13:20:52,814 - app - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/DIS125G/网页制作/网盘/app.py", line 239, in login
+    generated_hash = generate_password_hash(password, method='scrypt', n=32768, r=8, p=1)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: generate_password_hash() got an unexpected keyword argument 'n'
+2025-07-08 13:22:01,569 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-08 13:22:16,659 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-08 13:22:16,660 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-08 13:22:16,661 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$yA1IUbmX9NS73HTA$0c145232730130af965b7d4ad206a04723ac43b30db8cf03b94ec09e077fdf3204e298c21d7743941d1124d63a6b9757864992fa04606f3fd7a2e5143e583df6
+2025-07-08 13:22:16,769 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$0ASOd0u4S6CmctAw$dddf8c5df8cf144da1289858f978a4ec50a7e0e3bbcab873dcc8cb25da1821384472ce368462ef810af14c91dc9965c3870df625515429d0a944bff558b663ac
+2025-07-08 13:22:16,838 - app - INFO - 密码比对结果: False
+2025-07-08 13:22:27,376 - app - INFO - 尝试加载用户数据文件: /Volumes/DIS125G/网页制作/网盘/users.json
+2025-07-08 13:22:27,383 - app - INFO - 成功加载用户数据，共 1 个用户
+2025-07-08 13:22:36,029 - app - INFO - 尝试加载用户数据文件: /Volumes/DIS125G/网页制作/网盘/users.json
+2025-07-08 13:22:36,032 - app - INFO - 成功加载用户数据，共 1 个用户
+2025-07-08 13:22:36,032 - app - ERROR - Exception on /register [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/DIS125G/网页制作/网盘/app.py", line 170, in register
+    hashed_password = generate_password_hash(password, method='scrypt', n=32768, r=8, p=1)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: generate_password_hash() got an unexpected keyword argument 'n'
+2025-07-08 13:22:48,774 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-08 13:22:48,777 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-08 13:22:48,778 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$yA1IUbmX9NS73HTA$0c145232730130af965b7d4ad206a04723ac43b30db8cf03b94ec09e077fdf3204e298c21d7743941d1124d63a6b9757864992fa04606f3fd7a2e5143e583df6
+2025-07-08 13:22:48,851 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$pypcxoyH8jCgGtPM$7afb5550194e43c255f84dca6f34fc5a085b9b69586b58699e3c61ebcfba7bf2bbb663988ee151b7cb4e32f5967984f2d4e1c4c3919eafd3053cf525f5d133f8
+2025-07-08 13:22:48,917 - app - INFO - 密码比对结果: False
+2025-07-08 13:22:57,659 - app - INFO - 尝试加载用户数据文件: /Volumes/DIS125G/网页制作/网盘/users.json
+2025-07-08 13:22:57,662 - app - INFO - 成功加载用户数据，共 1 个用户
+2025-07-08 13:22:57,662 - app - ERROR - Exception on /register [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/DIS125G/网页制作/网盘/app.py", line 170, in register
+    hashed_password = generate_password_hash(password, method='scrypt', n=32768, r=8, p=1)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: generate_password_hash() got an unexpected keyword argument 'n'
+2025-07-08 13:24:23,662 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-08 13:26:08,182 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-08 13:26:08,184 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-08 13:26:08,186 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$yA1IUbmX9NS73HTA$0c145232730130af965b7d4ad206a04723ac43b30db8cf03b94ec09e077fdf3204e298c21d7743941d1124d63a6b9757864992fa04606f3fd7a2e5143e583df6
+2025-07-08 13:26:08,263 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$Li9N7i7my2CdStvb$42888920d5278d3ed70bbdfad7f3e81998ac3f2e85ae660ebfa712829ea9e198887e6088530b28228236d4393b028d0d515282b6de5059dcfd90ff0da128452a
+2025-07-08 13:26:08,327 - app - INFO - 密码比对结果: False
+2025-07-08 13:26:18,154 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-08 13:26:18,155 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-08 13:26:18,156 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$yA1IUbmX9NS73HTA$0c145232730130af965b7d4ad206a04723ac43b30db8cf03b94ec09e077fdf3204e298c21d7743941d1124d63a6b9757864992fa04606f3fd7a2e5143e583df6
+2025-07-08 13:26:18,227 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$KFBqlhxlL6Bd38gr$d35805e81eabf5a2c5e5a1836997ebc2713f24e78d6a87c8b125a4ae7d371fdf5196084c4e4f4892baf51ec77a21a059de323693bfa58f8c5d1b78df1f683976
+2025-07-08 13:26:18,291 - app - INFO - 密码比对结果: False
+2025-07-08 13:26:25,100 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-08 13:26:25,103 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-08 13:26:25,105 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$yA1IUbmX9NS73HTA$0c145232730130af965b7d4ad206a04723ac43b30db8cf03b94ec09e077fdf3204e298c21d7743941d1124d63a6b9757864992fa04606f3fd7a2e5143e583df6
+2025-07-08 13:26:25,178 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$HBERujuPKOSsGa0n$a21a783a6934ef0bb710b33de6f055387b4a48dc11cb55a354354851aee95dfb354ffbfbebc86ec878168b04f5603fd40ebf29e3638524ae2309bd2a7ddeab71
+2025-07-08 13:26:25,240 - app - INFO - 密码比对结果: False
+2025-07-08 13:28:45,628 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-08 13:32:58,871 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-08 13:32:58,872 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-08 13:32:58,874 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$yA1IUbmX9NS73HTA$0c145232730130af965b7d4ad206a04723ac43b30db8cf03b94ec09e077fdf3204e298c21d7743941d1124d63a6b9757864992fa04606f3fd7a2e5143e583df6
+2025-07-08 13:32:58,947 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$Tqvi2SPBUg2mHw3f$eb1e22e42ba7292c3a9a413fa2c01c8f1cbbf0dab340a465a7f2d9f3789f48e6bf97c550b18a3688aaaeff92db8fcbe5f062f9209a0cf09a86e6eee85e1a40dd
+2025-07-08 13:32:59,011 - app - INFO - 密码比对结果: False
+2025-07-08 13:33:12,434 - app - INFO - 尝试加载用户数据文件: /Volumes/DIS125G/网页制作/网盘/users.json
+2025-07-08 13:33:12,437 - app - INFO - 成功加载用户数据，共 1 个用户
+2025-07-08 13:33:12,509 - app - INFO - 注册用户: fqb, 生成哈希: scrypt:32768:8:1$DtRdXA4byceLUMiR$ad633a03d58e3b4a5c5edbcf64608d88e47d37ee1d8a834aec02f441cb54aec3d980f54c2e8bd79a1b1b342ab505f600a15f2fa4c55c268d1b9c5e5696354c45
+2025-07-08 13:33:19,403 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fqb', 'password': '123456'}
+2025-07-08 13:33:19,406 - app - INFO - 登录尝试 - 原始用户名: fqb, 处理后用户名: fqb, 密码长度: 6
+2025-07-08 13:33:19,406 - app - DEBUG - [DEBUG] 找到用户: fqb, 存储的哈希: scrypt:32768:8:1$DtRdXA4byceLUMiR$ad633a03d58e3b4a5c5edbcf64608d88e47d37ee1d8a834aec02f441cb54aec3d980f54c2e8bd79a1b1b342ab505f600a15f2fa4c55c268d1b9c5e5696354c45
+2025-07-08 13:33:19,471 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$4FEnn2OCpQBzHCX1$b7821aeae317e9189d9a5282961af49f4dca05e7bb6ff540056539d23cbc5ed8fd7ad35af1d15b0efcb21f3b0087c7d455f32d4172abc5e6b975330192269c1f
+2025-07-08 13:33:19,534 - app - INFO - 密码比对结果: False
+2025-07-08 17:28:50,304 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-08 17:28:50,305 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-08 17:28:50,307 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$yA1IUbmX9NS73HTA$0c145232730130af965b7d4ad206a04723ac43b30db8cf03b94ec09e077fdf3204e298c21d7743941d1124d63a6b9757864992fa04606f3fd7a2e5143e583df6
+2025-07-08 17:28:50,458 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$cIkk0PzzNM1wtOdL$65ce2da394d2ffb3d778bf69f820f417af04bd68ca097211eb1ea0ce80d5225421752796e79fca12231cda0f7288e30d7e3fa2ecc05abe1722c216ce256d2aa8
+2025-07-08 17:28:50,522 - app - INFO - 密码比对结果: False
+2025-07-08 17:28:58,857 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fqb', 'password': '123456'}
+2025-07-08 17:28:58,858 - app - INFO - 登录尝试 - 原始用户名: fqb, 处理后用户名: fqb, 密码长度: 6
+2025-07-08 17:28:58,859 - app - DEBUG - [DEBUG] 找到用户: fqb, 存储的哈希: scrypt:32768:8:1$DtRdXA4byceLUMiR$ad633a03d58e3b4a5c5edbcf64608d88e47d37ee1d8a834aec02f441cb54aec3d980f54c2e8bd79a1b1b342ab505f600a15f2fa4c55c268d1b9c5e5696354c45
+2025-07-08 17:28:58,929 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$Nbc9Jb0ZsV96fG7u$7900b129de47a066c4f67a91db4e6eaf7b45b5b2e7d0a9993d566940bf376ffe1068cb470aabe35bccfda10be0d4343d33a46406524225520de1386a3feb01f4
+2025-07-08 17:28:58,995 - app - INFO - 密码比对结果: False
+2025-07-08 17:31:46,628 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-08 17:33:02,705 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-08 17:33:02,707 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-08 17:33:02,719 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$yA1IUbmX9NS73HTA$0c145232730130af965b7d4ad206a04723ac43b30db8cf03b94ec09e077fdf3204e298c21d7743941d1124d63a6b9757864992fa04606f3fd7a2e5143e583df6
+2025-07-08 17:33:02,787 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$osBsOSVie8BxIH15$36fb0e3a221be111f432b5d24f8b5420db2557ead9b30e90c7108800c96ad8182c6537516fc4ae6e742ca6714299aa96cfdec7bbc449dd2beb79918717c8ccb0
+2025-07-08 17:33:02,850 - app - INFO - 密码比对结果: False
+2025-07-08 17:34:16,374 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': '123456', 'password': '123456'}
+2025-07-08 17:34:16,376 - app - INFO - 登录尝试 - 原始用户名: 123456, 处理后用户名: 123456, 密码长度: 6
+2025-07-08 17:34:24,839 - app - INFO - 尝试加载用户数据文件: /Volumes/DIS125G/网页制作/网盘/users.json
+2025-07-08 17:34:24,840 - app - INFO - 成功加载用户数据，共 2 个用户
+2025-07-08 17:34:24,907 - app - INFO - 注册用户: 123456, 生成哈希: scrypt:32768:8:1$dYLaTiMgaSbr8YCC$e183f2b85a3882898f3fd22c787cfd4f9929ef964fef3d4b63e71a16d5338b5377816f257b0a5465ae74d3e2fa251932a214a61d283a4c9d4e1723e48ca02dfe
+2025-07-08 17:34:30,191 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': '123456', 'password': '123456'}
+2025-07-08 17:34:30,195 - app - INFO - 登录尝试 - 原始用户名: 123456, 处理后用户名: 123456, 密码长度: 6
+2025-07-08 17:34:30,195 - app - DEBUG - [DEBUG] 找到用户: 123456, 存储的哈希: scrypt:32768:8:1$dYLaTiMgaSbr8YCC$e183f2b85a3882898f3fd22c787cfd4f9929ef964fef3d4b63e71a16d5338b5377816f257b0a5465ae74d3e2fa251932a214a61d283a4c9d4e1723e48ca02dfe
+2025-07-08 17:34:30,278 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$wlOkBdTssM8GGPen$b217800ed1551d42fef4a6ee704ac5e2acf5f2a99abc72a58dcc773c9c32b026f903b98f02dd27162900a82093c991ea93cf8ebd439f4523d8b3a0f67c890d71
+2025-07-08 17:34:30,342 - app - INFO - 密码比对结果: True
+2025-07-08 17:34:58,191 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-08 17:34:58,193 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-08 17:34:58,203 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$yA1IUbmX9NS73HTA$0c145232730130af965b7d4ad206a04723ac43b30db8cf03b94ec09e077fdf3204e298c21d7743941d1124d63a6b9757864992fa04606f3fd7a2e5143e583df6
+2025-07-08 17:34:58,295 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$0NoOY8swcDIqy4gp$77613d45b0b649fadd6733a04c81929332cff7f1a4a30ad0a0ae5b2d422e541a9f792d8e1dd05f3479bc5fb018e2e2d6b701f9d95c666296aa5d3e0dc7285727
+2025-07-08 17:34:58,361 - app - INFO - 密码比对结果: False
+2025-07-08 17:35:08,115 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': '123456', 'password': '123456'}
+2025-07-08 17:35:08,116 - app - INFO - 登录尝试 - 原始用户名: 123456, 处理后用户名: 123456, 密码长度: 6
+2025-07-08 17:35:08,117 - app - DEBUG - [DEBUG] 找到用户: 123456, 存储的哈希: scrypt:32768:8:1$dYLaTiMgaSbr8YCC$e183f2b85a3882898f3fd22c787cfd4f9929ef964fef3d4b63e71a16d5338b5377816f257b0a5465ae74d3e2fa251932a214a61d283a4c9d4e1723e48ca02dfe
+2025-07-08 17:35:08,202 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$BEg3xrhw0ELtMtFJ$e1f9d54995cf3729902e883b03de14b5c460a3e9b0d471aa3e7d21516e76f2bd57f7112e4b745be37e983987c74a5d921f1c9ce0b3adea1fcfa038d0aa2ed61c
+2025-07-08 17:35:08,271 - app - INFO - 密码比对结果: True
+2025-07-08 17:36:12,511 - app - INFO - 文件已保存: /Volumes/DIS125G/网页制作/网盘/uploads/2.exe
+2025-07-08 17:36:12,517 - app - INFO - 文件保存成功: /Volumes/DIS125G/网页制作/网盘/uploads/2.exe
+2025-07-08 17:36:12,530 - app - INFO - 尝试列出目录: /Volumes/DIS125G/网页制作/网盘/uploads
+2025-07-08 17:36:12,532 - app - INFO - 找到文件: ['serial.txt', '._serial.txt', '2.exe', '._2.exe']
+2025-07-08 18:05:06,302 - app - INFO - 尝试列出目录: /Volumes/DIS125G/网页制作/网盘/uploads
+2025-07-08 18:05:06,306 - app - INFO - 找到文件: ['serial.txt', '._serial.txt', '2.exe', '._2.exe']
+2025-07-08 18:06:20,643 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-08 18:06:20,644 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-08 18:06:27,680 - app - INFO - 尝试加载用户数据文件: /Volumes/DIS125G/网页制作/网盘/users.json
+2025-07-08 18:06:27,682 - app - INFO - 成功加载用户数据，共 0 个用户
+2025-07-08 18:06:27,756 - app - INFO - 注册用户: fyh, 生成哈希: scrypt:32768:8:1$jGLWVpqQl0KKAjL0$3bf68f652b27b5da4c49e54ad8eab003144958dfc5e896910549086f80852e0eac3a2ad9008d7237cd3e82bc05fae7884afe463e9d4d7442b8134b2c7207818f
+2025-07-08 18:06:32,521 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-08 18:06:32,521 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-08 18:06:32,521 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$jGLWVpqQl0KKAjL0$3bf68f652b27b5da4c49e54ad8eab003144958dfc5e896910549086f80852e0eac3a2ad9008d7237cd3e82bc05fae7884afe463e9d4d7442b8134b2c7207818f
+2025-07-08 18:06:32,587 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$mosmt6iTPwbEvxLF$1ba24ae68161a8e79a2000f10b87f721fd71c45e93598a43757dd37966677c33f20e413007b7ae320372588bc0258014b604ee0ad8a6fce31f66cd6d28eecfb5
+2025-07-08 18:06:32,650 - app - INFO - 密码比对结果: True
+2025-07-08 18:06:52,016 - app - INFO - 文件已保存: /Volumes/DIS125G/网页制作/网盘/uploads/jojo.txt
+2025-07-08 18:06:52,018 - app - INFO - 文件保存成功: /Volumes/DIS125G/网页制作/网盘/uploads/jojo.txt
+2025-07-08 18:06:52,032 - app - INFO - 尝试列出目录: /Volumes/DIS125G/网页制作/网盘/uploads
+2025-07-08 18:06:52,034 - app - INFO - 找到文件: ['serial.txt', '._serial.txt', '2.exe', '._2.exe', 'jojo.txt', '._jojo.txt']
+2025-07-08 22:22:34,621 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-08 22:22:34,622 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-08 22:22:34,638 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$jGLWVpqQl0KKAjL0$3bf68f652b27b5da4c49e54ad8eab003144958dfc5e896910549086f80852e0eac3a2ad9008d7237cd3e82bc05fae7884afe463e9d4d7442b8134b2c7207818f
+2025-07-08 22:22:34,718 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$jSAASES6BG1OMXWM$fb1e2d0ead14762993f7eb3881b97638e5cac882e8fa4db0c7e8fa699846153070b4416f3c228c8e69646a5def23fc040d5355be2a6cb5b0e1d396701ccd56ce
+2025-07-08 22:22:34,783 - app - INFO - 密码比对结果: True
+2025-07-08 22:35:41,382 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-08 22:37:06,045 - app - INFO - 尝试列出目录: /Volumes/DIS125G/网页制作/网盘/uploads
+2025-07-08 22:37:06,051 - app - INFO - 找到文件: ['serial.txt', '._serial.txt', '2.exe', '._2.exe', 'jojo.txt', '._jojo.txt']
+2025-07-08 22:37:25,947 - app - INFO - 尝试列出目录: /Volumes/DIS125G/网页制作/网盘/uploads
+2025-07-08 22:37:25,951 - app - INFO - 找到文件: ['serial.txt', '._serial.txt', '2.exe', '._2.exe', 'jojo.txt', '._jojo.txt']
+2025-07-08 22:37:26,465 - app - INFO - 尝试列出目录: /Volumes/DIS125G/网页制作/网盘/uploads
+2025-07-08 22:37:26,467 - app - INFO - 找到文件: ['serial.txt', '._serial.txt', '2.exe', '._2.exe', 'jojo.txt', '._jojo.txt']
+2025-07-08 22:37:26,797 - app - INFO - 尝试列出目录: /Volumes/DIS125G/网页制作/网盘/uploads
+2025-07-08 22:37:26,800 - app - INFO - 找到文件: ['serial.txt', '._serial.txt', '2.exe', '._2.exe', 'jojo.txt', '._jojo.txt']
+2025-07-08 22:37:27,028 - app - INFO - 尝试列出目录: /Volumes/DIS125G/网页制作/网盘/uploads
+2025-07-08 22:37:27,030 - app - INFO - 找到文件: ['serial.txt', '._serial.txt', '2.exe', '._2.exe', 'jojo.txt', '._jojo.txt']
+2025-07-08 22:37:27,196 - app - INFO - 尝试列出目录: /Volumes/DIS125G/网页制作/网盘/uploads
+2025-07-08 22:37:27,199 - app - INFO - 找到文件: ['serial.txt', '._serial.txt', '2.exe', '._2.exe', 'jojo.txt', '._jojo.txt']
+2025-07-08 22:37:27,529 - app - INFO - 尝试列出目录: /Volumes/DIS125G/网页制作/网盘/uploads
+2025-07-08 22:37:27,530 - app - INFO - 找到文件: ['serial.txt', '._serial.txt', '2.exe', '._2.exe', 'jojo.txt', '._jojo.txt']
+2025-07-08 22:37:38,866 - app - INFO - 尝试列出目录: /Volumes/DIS125G/网页制作/网盘/uploads
+2025-07-08 22:37:38,869 - app - INFO - 找到文件: ['serial.txt', '._serial.txt', '2.exe', '._2.exe', 'jojo.txt', '._jojo.txt']
+2025-07-08 22:38:10,959 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-08 22:38:10,960 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-08 22:38:10,963 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$jGLWVpqQl0KKAjL0$3bf68f652b27b5da4c49e54ad8eab003144958dfc5e896910549086f80852e0eac3a2ad9008d7237cd3e82bc05fae7884afe463e9d4d7442b8134b2c7207818f
+2025-07-08 22:38:11,034 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$EQRbEDJlV3Ke2nlg$8e4f8a7146f50cfe4f728650246b58be872d1ac54287ec69b2f3df7e73a7c235fb4e729083b4f4532ce760846a6880ca7fbe03d05ffafb870b96562641a6c8d2
+2025-07-08 22:38:11,096 - app - INFO - 密码比对结果: True
+2025-07-08 22:38:13,159 - app - INFO - 尝试列出目录: /Volumes/DIS125G/网页制作/网盘/uploads
+2025-07-08 22:38:13,163 - app - INFO - 找到文件: ['serial.txt', '._serial.txt', '2.exe', '._2.exe', 'jojo.txt', '._jojo.txt']
+2025-07-08 22:38:28,696 - app - INFO - 尝试列出目录: /Volumes/DIS125G/网页制作/网盘/uploads
+2025-07-08 22:38:28,700 - app - INFO - 找到文件: ['serial.txt', '._serial.txt', '2.exe', '._2.exe', 'jojo.txt', '._jojo.txt']
+2025-07-08 22:40:23,553 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-08 22:47:25,444 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-08 22:51:48,036 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-08 22:53:12,495 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-08 22:54:11,847 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-08 22:54:12,015 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-08 22:54:12,134 - app - ERROR - 上传请求中没有文件部分
+2025-07-08 22:58:01,697 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-08 22:58:02,827 - app - ERROR - 上传请求中没有文件部分
+2025-07-08 22:59:00,218 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-08 22:59:00,346 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-09 10:16:11,335 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-09 10:16:11,595 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-09 10:19:01,274 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-09 10:19:01,275 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-09 10:19:01,277 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$jGLWVpqQl0KKAjL0$3bf68f652b27b5da4c49e54ad8eab003144958dfc5e896910549086f80852e0eac3a2ad9008d7237cd3e82bc05fae7884afe463e9d4d7442b8134b2c7207818f
+2025-07-09 10:19:01,426 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$E5S1pwkLux6NOJi4$d799c02705cb68216f34524e5ec2789132b8a533206894695b8869aac018a716aec8afeb303a54bcae13e8dd1ff8ddede40056b4ca5611d42f80fdbb5ddcbbba
+2025-07-09 10:19:01,501 - app - INFO - 密码比对结果: True
+2025-07-09 10:19:01,511 - app - ERROR - 上传请求中没有文件部分
+2025-07-09 10:19:23,160 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-09 10:19:23,161 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-09 10:19:23,163 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$jGLWVpqQl0KKAjL0$3bf68f652b27b5da4c49e54ad8eab003144958dfc5e896910549086f80852e0eac3a2ad9008d7237cd3e82bc05fae7884afe463e9d4d7442b8134b2c7207818f
+2025-07-09 10:19:23,281 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$dnjg5iDLYE1KzeIO$7027fffd841dd05b12ed4782d10e5511ce18e754ef2ea199a197b7e22053e644c8ab1823ca5807df5f3169efe0508ca9381a57543c3509ddc54329f88b59d0d2
+2025-07-09 10:19:23,346 - app - INFO - 密码比对结果: True
+2025-07-09 10:19:23,350 - app - ERROR - 上传请求中没有文件部分
+2025-07-09 10:19:48,663 - app - ERROR - 上传请求中没有文件部分
+2025-07-09 10:22:05,894 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-09 10:22:05,895 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-09 10:22:05,898 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$jGLWVpqQl0KKAjL0$3bf68f652b27b5da4c49e54ad8eab003144958dfc5e896910549086f80852e0eac3a2ad9008d7237cd3e82bc05fae7884afe463e9d4d7442b8134b2c7207818f
+2025-07-09 10:22:05,974 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$0hqIYZi3LouqfLXP$f555424b01ad7802fa606a1dcd06992170040da584d06e0b33469b26bc1d8934ebad3dc7d206a7da038782bdbbe109ccbbc2cdedde07c734fbe4d2ed58522bd1
+2025-07-09 10:22:06,038 - app - INFO - 密码比对结果: True
+2025-07-09 10:22:06,086 - app - ERROR - 上传请求中没有文件部分
+2025-07-09 10:22:25,391 - app - DEBUG - 日志系统初始化完成，已启用文件日志记录
+2025-07-09 10:22:26,811 - app - DEBUG - 访问上传页面 - 方法: GET
+2025-07-09 10:24:17,827 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-09 10:24:17,829 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-09 10:24:17,831 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$jGLWVpqQl0KKAjL0$3bf68f652b27b5da4c49e54ad8eab003144958dfc5e896910549086f80852e0eac3a2ad9008d7237cd3e82bc05fae7884afe463e9d4d7442b8134b2c7207818f
+2025-07-09 10:24:17,911 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$MdfJg2p8Z240XWqS$f3ee24564305dcea7ec32c3169059cf5a6e4eded1f434cb90b1012498b048dddb69d63872e0d44ae7f9d209c250cff5133cfbcfa60e83632164afcd36e71bf6a
+2025-07-09 10:24:17,978 - app - INFO - 密码比对结果: True
+2025-07-09 10:30:09,954 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-09 10:30:09,956 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-09 10:30:09,957 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$jGLWVpqQl0KKAjL0$3bf68f652b27b5da4c49e54ad8eab003144958dfc5e896910549086f80852e0eac3a2ad9008d7237cd3e82bc05fae7884afe463e9d4d7442b8134b2c7207818f
+2025-07-09 10:30:10,026 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$wfxO2sSux0sDLovq$3ce32cca965e3a7da29e03a3818fd8a80a0bc188a8195fc9b12d27c54cdbd51d7367a0705f9786598a34a9b14724ed868ea0f18c4ac0d536329730ed8d11afae
+2025-07-09 10:30:10,090 - app - INFO - 密码比对结果: True
+2025-07-09 10:30:19,944 - app - INFO - 登录请求接收 - 方法: POST, 表单数据: {'username': 'fyh', 'password': '123456'}
+2025-07-09 10:30:19,944 - app - INFO - 登录尝试 - 原始用户名: fyh, 处理后用户名: fyh, 密码长度: 6
+2025-07-09 10:30:19,945 - app - DEBUG - [DEBUG] 找到用户: fyh, 存储的哈希: scrypt:32768:8:1$jGLWVpqQl0KKAjL0$3bf68f652b27b5da4c49e54ad8eab003144958dfc5e896910549086f80852e0eac3a2ad9008d7237cd3e82bc05fae7884afe463e9d4d7442b8134b2c7207818f
+2025-07-09 10:30:20,017 - app - DEBUG - [DEBUG] 输入密码生成的哈希: scrypt:32768:8:1$fzL2Kxp3137zYU5a$b416d7eabb524afc621d06fe7e5329803b280ded6732ed7c9ee65e795e4fdb21fe015f6efe394ef1da5fe21ec59ffe0b398a2cb94d0c37fded530fdd4bfacf58
+2025-07-09 10:30:20,079 - app - INFO - 密码比对结果: True
+2025-07-09 10:30:25,681 - app - DEBUG - 访问上传页面 - 方法: GET
+2025-07-09 10:30:29,594 - app - DEBUG - 访问上传页面 - 方法: GET
+2025-07-09 10:32:04,278 - app - DEBUG - 访问上传页面 - 方法: GET
+2025-07-09 10:32:16,497 - app - INFO - 尝试列出目录: /Volumes/DIS125G/网页制作/网盘/uploads
+2025-07-09 10:32:16,499 - app - INFO - 找到文件: ['serial.txt', '._serial.txt', '2.exe', '._2.exe', 'jojo.txt', '._jojo.txt']
