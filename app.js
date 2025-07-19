@@ -263,9 +263,27 @@ function handleDownload(e) {
     const file = files.find(f => f.id === fileId);
 
     if (file) {
-        // 这里只是一个模拟，实际应用中应该从服务器获取文件
+        // 创建一个临时的blob对象和URL
+        // 注意：这里只是模拟下载，实际应用中应该从服务器获取文件
+        const blob = new Blob(['这是一个模拟的文件内容。在实际应用中，这里应该是真实的文件内容。'], {
+            type: file.type
+        });
+        const url = URL.createObjectURL(blob);
+
+        // 创建一个临时的a标签来触发下载
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = file.name;
+        document.body.appendChild(a);
+        a.click();
+
+        // 清理
+        setTimeout(() => {
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }, 0);
+
         alert(`开始下载文件: ${file.name}`);
-        // 实际应用中，这里应该有一个真实的下载过程
     }
 }
 
